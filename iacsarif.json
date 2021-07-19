@@ -1,0 +1,1210 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "originalUriBaseIds": {
+        "PROJECTROOT": {
+          "uri": "file:///Users/arturkotliar/snyk/terraform-goof/",
+          "description": {
+            "text": "The root directory for all project files."
+          }
+        }
+      },
+      "tool": {
+        "driver": {
+          "name": "Snyk Infrastructure as Code",
+          "rules": [
+            {
+              "id": "SNYK-CC-TF-74",
+              "shortDescription": {
+                "text": "High severity - Credentials are configured via provider attributes"
+              },
+              "fullDescription": {
+                "text": "undefined Provider"
+              },
+              "help": {
+                "text": "The issue is... \nCredentials are configured via provider attributes\n\n The impact of this is... \n Use of provider attributes can lead to accidental disclosure of credentials in configuration files, variable definition files, event logs or console logs\n\n You can resolve this by... \nSet access credentials via environment variables, and remove `access_key` and `secret_key` attributes from the configuration",
+                "markdown": "**The issue is...** \nCredentials are configured via provider attributes\n\n **The impact of this is...** \n Use of provider attributes can lead to accidental disclosure of credentials in configuration files, variable definition files, event logs or console logs\n\n **You can resolve this by...** \nSet access credentials via environment variables, and remove `access_key` and `secret_key` attributes from the configuration"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/Provider"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-74"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-8",
+              "shortDescription": {
+                "text": "Medium severity - IAM password should contain lowercase"
+              },
+              "fullDescription": {
+                "text": "undefined IAM"
+              },
+              "help": {
+                "text": "The issue is... \nYour password does not contain lowercase characters\n\n The impact of this is... \n Your password is not following the recommended security practices and is not as strong as it should be\n\n You can resolve this by... \nSet the `require_lowercase` attribute to be `true` to increase the strength of your password",
+                "markdown": "**The issue is...** \nYour password does not contain lowercase characters\n\n **The impact of this is...** \n Your password is not following the recommended security practices and is not as strong as it should be\n\n **You can resolve this by...** \nSet the `require_lowercase` attribute to be `true` to increase the strength of your password"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/IAM"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-8"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-9",
+              "shortDescription": {
+                "text": "Medium severity - IAM password should contain symbols"
+              },
+              "fullDescription": {
+                "text": "undefined IAM"
+              },
+              "help": {
+                "text": "The issue is... \nYour password does not contain symbols\n\n The impact of this is... \n Your password is not following the recommended security practices and is not as strong as it should be\n\n You can resolve this by... \nSet the `require_symbols` attribute to be `true` to increase the strength of your password",
+                "markdown": "**The issue is...** \nYour password does not contain symbols\n\n **The impact of this is...** \n Your password is not following the recommended security practices and is not as strong as it should be\n\n **You can resolve this by...** \nSet the `require_symbols` attribute to be `true` to increase the strength of your password"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/IAM"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-9"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-10",
+              "shortDescription": {
+                "text": "Medium severity - IAM password should contain numbers"
+              },
+              "fullDescription": {
+                "text": "undefined IAM"
+              },
+              "help": {
+                "text": "The issue is... \nYour password does not contain numbers\n\n The impact of this is... \n Your password is not following the recommended security practices and is not as strong as it should be\n\n You can resolve this by... \nSet the `require_numbers` attribute to be `true` to increase the strength of your password",
+                "markdown": "**The issue is...** \nYour password does not contain numbers\n\n **The impact of this is...** \n Your password is not following the recommended security practices and is not as strong as it should be\n\n **You can resolve this by...** \nSet the `require_numbers` attribute to be `true` to increase the strength of your password"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/IAM"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-10"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-11",
+              "shortDescription": {
+                "text": "Medium severity - IAM requires minimum password length"
+              },
+              "fullDescription": {
+                "text": "undefined IAM"
+              },
+              "help": {
+                "text": "The issue is... \nYour password does not enforce a minimum length\n\n The impact of this is... \n Your password is not following the recommended security practices and is not as strong as it should be\n\n You can resolve this by... \nSet the `minimum_password_length` attribute to be at least `14` to increase the strength of your password",
+                "markdown": "**The issue is...** \nYour password does not enforce a minimum length\n\n **The impact of this is...** \n Your password is not following the recommended security practices and is not as strong as it should be\n\n **You can resolve this by...** \nSet the `minimum_password_length` attribute to be at least `14` to increase the strength of your password"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/IAM"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-11"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-7",
+              "shortDescription": {
+                "text": "Medium severity - IAM password should contain uppercase"
+              },
+              "fullDescription": {
+                "text": "undefined IAM"
+              },
+              "help": {
+                "text": "The issue is... \nYour password does not contain uppercase characters\n\n The impact of this is... \n Your password is not following the recommended security practices and is not as strong as it should be\n\n You can resolve this by... \nSet the `require_uppercase` attribute to be `true` to increase the strength of your password",
+                "markdown": "**The issue is...** \nYour password does not contain uppercase characters\n\n **The impact of this is...** \n Your password is not following the recommended security practices and is not as strong as it should be\n\n **You can resolve this by...** \nSet the `require_uppercase` attribute to be `true` to increase the strength of your password"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/IAM"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-7"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-127",
+              "shortDescription": {
+                "text": "Low severity - S3 bucket MFA delete control disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nS3 bucket will not enforce MFA login on delete requests\n\n The impact of this is... \n Object could be deleted without stronger MFA authorization\n\n You can resolve this by... \nSet `versioning.mfa_delete` attribute to `true`",
+                "markdown": "**The issue is...** \nS3 bucket will not enforce MFA login on delete requests\n\n **The impact of this is...** \n Object could be deleted without stronger MFA authorization\n\n **You can resolve this by...** \nSet `versioning.mfa_delete` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-127"
+              }
+            },
+            {
+              "id": "SNYK-CC-AWS-414",
+              "shortDescription": {
+                "text": "Medium severity - RDS IAM authentication is disabled"
+              },
+              "fullDescription": {
+                "text": "undefined RDS"
+              },
+              "help": {
+                "text": "The issue is... \nIAM database authentication is disabled, authentication tokens are not used to connect to DB instance\n\n The impact of this is... \n Users will connect to DB instance with password, which are less secure than temporary tokens which expire\n\n You can resolve this by... \nSet `iam_database_authentication_enabled` to `true`.",
+                "markdown": "**The issue is...** \nIAM database authentication is disabled, authentication tokens are not used to connect to DB instance\n\n **The impact of this is...** \n Users will connect to DB instance with password, which are less secure than temporary tokens which expire\n\n **You can resolve this by...** \nSet `iam_database_authentication_enabled` to `true`."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/RDS"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-AWS-414"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-95",
+              "shortDescription": {
+                "text": "High severity - S3 block public ACLs control is disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nBucket does not prevent creation of public ACLs\n\n The impact of this is... \n Anyone who can manage bucket's ACLs will be able to grant public access to the bucket\n\n You can resolve this by... \nSet `block_public_acls` attribute to `true`",
+                "markdown": "**The issue is...** \nBucket does not prevent creation of public ACLs\n\n **The impact of this is...** \n Anyone who can manage bucket's ACLs will be able to grant public access to the bucket\n\n **You can resolve this by...** \nSet `block_public_acls` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-95"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-1",
+              "shortDescription": {
+                "text": "Medium severity - Security Group allows open ingress"
+              },
+              "fullDescription": {
+                "text": "undefined VPC"
+              },
+              "help": {
+                "text": "The issue is... \nThat inbound traffic is allowed to a resource from any source instead of a restricted range\n\n The impact of this is... \n That potentially everyone can access your resource\n\n You can resolve this by... \nSet `cidr_block` attribute with a more restrictive IP, for example `192.16.0.0/24`",
+                "markdown": "**The issue is...** \nThat inbound traffic is allowed to a resource from any source instead of a restricted range\n\n **The impact of this is...** \n That potentially everyone can access your resource\n\n **You can resolve this by...** \nSet `cidr_block` attribute with a more restrictive IP, for example `192.16.0.0/24`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/VPC"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-1"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-73",
+              "shortDescription": {
+                "text": "Low severity - AWS Security Group allows open egress"
+              },
+              "fullDescription": {
+                "text": "undefined VPC"
+              },
+              "help": {
+                "text": "The issue is... \nThe inline security group rule allows open egress\n\n The impact of this is... \n Open egress can be used to exfiltrate data to unauthorized destinations, and enable access to potentially malicious resources\n\n You can resolve this by... \nundefined",
+                "markdown": "**The issue is...** \nThe inline security group rule allows open egress\n\n **The impact of this is...** \n Open egress can be used to exfiltrate data to unauthorized destinations, and enable access to potentially malicious resources\n\n **You can resolve this by...** \nundefined"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/VPC"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-73"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-45",
+              "shortDescription": {
+                "text": "Low severity - S3 server access logging is disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nThe s3 access logs will not be collected\n\n The impact of this is... \n There will be no audit trail of access to s3 objects\n\n You can resolve this by... \nAdd `logging` block attribute",
+                "markdown": "**The issue is...** \nThe s3 access logs will not be collected\n\n **The impact of this is...** \n There will be no audit trail of access to s3 objects\n\n **You can resolve this by...** \nAdd `logging` block attribute"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-45"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-56",
+              "shortDescription": {
+                "text": "Low severity - Missing description"
+              },
+              "fullDescription": {
+                "text": "undefined VPC"
+              },
+              "help": {
+                "text": "The issue is... \nThe description field is missing in the security group\n\n The impact of this is... \n Increases the security management overhead\n\n You can resolve this by... \nSet `description` attribute to meaningful statement",
+                "markdown": "**The issue is...** \nThe description field is missing in the security group\n\n **The impact of this is...** \n Increases the security management overhead\n\n **You can resolve this by...** \nSet `description` attribute to meaningful statement"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/VPC"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-56"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-97",
+              "shortDescription": {
+                "text": "High severity - S3 ignore public ACLs control is disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nBucket will recognize public ACLs and allow public access\n\n The impact of this is... \n If public ACL is attached to the bucket, anyone will be able to read and/or write to the bucket.\n\n You can resolve this by... \nSet `ignore_public_acls` attribute to `true`",
+                "markdown": "**The issue is...** \nBucket will recognize public ACLs and allow public access\n\n **The impact of this is...** \n If public ACL is attached to the bucket, anyone will be able to read and/or write to the bucket.\n\n **You can resolve this by...** \nSet `ignore_public_acls` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-97"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-124",
+              "shortDescription": {
+                "text": "Low severity - S3 bucket versioning disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nS3 bucket versioning is disabled\n\n The impact of this is... \n Changes or deletion of objects will not be reversible\n\n You can resolve this by... \nSet `versioning.enabled` attribute to `true`",
+                "markdown": "**The issue is...** \nS3 bucket versioning is disabled\n\n **The impact of this is...** \n Changes or deletion of objects will not be reversible\n\n **You can resolve this by...** \nSet `versioning.enabled` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-124"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-98",
+              "shortDescription": {
+                "text": "High severity - S3 restrict public bucket control is disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nBucket will recognize public policies and allow public access\n\n The impact of this is... \n If public policy is attached to the bucket, anyone will be able to read and/or write to the bucket.\n\n You can resolve this by... \nSet `restrict_public_buckets` attribute to `true`",
+                "markdown": "**The issue is...** \nBucket will recognize public policies and allow public access\n\n **The impact of this is...** \n If public policy is attached to the bucket, anyone will be able to read and/or write to the bucket.\n\n **You can resolve this by...** \nSet `restrict_public_buckets` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-98"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-4",
+              "shortDescription": {
+                "text": "Medium severity - Non-encrypted S3 Bucket"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nThat by default S3 buckets do not encrypt the objects that are stored.\n\n The impact of this is... \n That should someone gain unauthorized access to the data they would be able to read the contents.\n\n You can resolve this by... \nSet `server_side_encryption_configuration` block attribute",
+                "markdown": "**The issue is...** \nThat by default S3 buckets do not encrypt the objects that are stored.\n\n **The impact of this is...** \n That should someone gain unauthorized access to the data they would be able to read the contents.\n\n **You can resolve this by...** \nSet `server_side_encryption_configuration` block attribute"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-4"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-96",
+              "shortDescription": {
+                "text": "High severity - S3 block public policy control is disabled"
+              },
+              "fullDescription": {
+                "text": "undefined S3"
+              },
+              "help": {
+                "text": "The issue is... \nBucket does not prevent creation of public policies\n\n The impact of this is... \n Anyone who can manage bucket's policies will be able to grant public access to the bucket.\n\n You can resolve this by... \nSet `block_public_policy` attribute to `true`",
+                "markdown": "**The issue is...** \nBucket does not prevent creation of public policies\n\n **The impact of this is...** \n Anyone who can manage bucket's policies will be able to grant public access to the bucket.\n\n **You can resolve this by...** \nSet `block_public_policy` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/S3"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-96"
+              }
+            },
+            {
+              "id": "SNYK-CC-AWS-426",
+              "shortDescription": {
+                "text": "Low severity - EC2 API termination protection is not enabled"
+              },
+              "fullDescription": {
+                "text": "undefined EC2"
+              },
+              "help": {
+                "text": "The issue is... \nTo prevent instance from being accidentally terminated using Amazon EC2, you can enable termination protection for the instance\n\n The impact of this is... \n Without this setting enabled the instances can be terminated by accident. This setting should only be used for instances with high availability requirements. Enabling this may prevent IaC workflows from updating the instance, for example terraform will not be able to terminate the instance to update instance type\n\n You can resolve this by... \nSet `disable_api_termination` attribute  with value `true`",
+                "markdown": "**The issue is...** \nTo prevent instance from being accidentally terminated using Amazon EC2, you can enable termination protection for the instance\n\n **The impact of this is...** \n Without this setting enabled the instances can be terminated by accident. This setting should only be used for instances with high availability requirements. Enabling this may prevent IaC workflows from updating the instance, for example terraform will not be able to terminate the instance to update instance type\n\n **You can resolve this by...** \nSet `disable_api_termination` attribute  with value `true`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/EC2"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-AWS-426"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-130",
+              "shortDescription": {
+                "text": "Low severity - EC2 instance accepts IMDSv1"
+              },
+              "fullDescription": {
+                "text": "undefined EC2"
+              },
+              "help": {
+                "text": "The issue is... \nInstance Metadata Service v2 is not enforced\n\n The impact of this is... \n Metadata service may be vulnerable to reverse proxy/open firewall misconfigurations and server side request forgery attacks\n\n You can resolve this by... \nSet `metadata_options.http_tokens` attribute to `required`",
+                "markdown": "**The issue is...** \nInstance Metadata Service v2 is not enforced\n\n **The impact of this is...** \n Metadata service may be vulnerable to reverse proxy/open firewall misconfigurations and server side request forgery attacks\n\n **You can resolve this by...** \nSet `metadata_options.http_tokens` attribute to `required`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/EC2"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-130"
+              }
+            },
+            {
+              "id": "SNYK-CC-TF-53",
+              "shortDescription": {
+                "text": "Medium severity - Non-Encrypted root block device"
+              },
+              "fullDescription": {
+                "text": "undefined EC2"
+              },
+              "help": {
+                "text": "The issue is... \nThe root block device for ec2 instance is not encrypted\n\n The impact of this is... \n That should someone gain unauthorized access to the data they would be able to read the contents.\n\n You can resolve this by... \nSet `root_block_device.encrypted` attribute to `true`",
+                "markdown": "**The issue is...** \nThe root block device for ec2 instance is not encrypted\n\n **The impact of this is...** \n That should someone gain unauthorized access to the data they would be able to read the contents.\n\n **You can resolve this by...** \nSet `root_block_device.encrypted` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "undefined/EC2"
+                ],
+                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-53"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "SNYK-CC-TF-74",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined Provider"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-8",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined IAM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-9",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined IAM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-10",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined IAM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-11",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined IAM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-7",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined IAM"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-127",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 112
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-414",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 45
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-95",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 119
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-127",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 104
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-1",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-73",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-45",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 104
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-45",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 112
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-56",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-97",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 116
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-124",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 104
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-98",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 116
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-124",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 112
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-4",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 104
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-4",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 112
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-96",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/storage/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 120
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-1",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "modules/vpc/main.tf",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-73",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-127",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-414",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-426",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined EC2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-95",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-127",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-1",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined VPC"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-130",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined EC2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-53",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the undefined EC2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-97",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-124",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-98",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-124",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-96",
+          "message": {
+            "text": "This line contains a potential high severity misconfiguration affecting the undefined S3"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tf-plan.json",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
